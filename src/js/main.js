@@ -1,1 +1,3 @@
-console.log('hello');
+import "../styles/style.scss";
+
+console.log('hello space teep, I love you 🐱');

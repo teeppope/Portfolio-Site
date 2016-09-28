@@ -1,5 +1,6 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const PATHS = {
 	src: path.resolve(__dirname, 'src'),
@@ -10,13 +11,13 @@ module.exports = {
 	entry: path.resolve(PATHS.src, 'js/main.js'),
 	output: {
 		path: PATHS.dist,
-		filename: 'bundle.js'
+		filename: 'bundle.[hash].js'
 	},
 	module: {
 		loaders: [
 			{
 				test: /\.scss$/,
-				loaders: ['style', 'css', 'sass']
+				loader: ExtractTextPlugin.extract(['css', 'sass'])
 			},
 			{
 				test: /\.js$/,
@@ -25,8 +26,9 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new htmlWebpackPlugin({
+		new HtmlWebpackPlugin({
 			template: path.resolve(PATHS.src, 'index.html')
-		})
+		}),
+		new ExtractTextPlugin('style.[hash].css')
 	]
 }
