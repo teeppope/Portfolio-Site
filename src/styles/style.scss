@@ -1,4 +1,10 @@
+@import 'variables';
+@import 'mixins';
 
-h1{
+h2{
 	color: gold;
+	font-family: $font-stack-mono;
+}
+p{
+	font-family: $font-stack-sans;
 }
