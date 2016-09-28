@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6{
+	font-family: $font-stack-mono;
+}
+h1{
+	font-size: $font-base-size-large;
+}
+h2{
+	font-size: $font-base-size-med;
+}
+p{
+	font-size: $font-base-size;
+	font-family: $font-stack-sans;
+}

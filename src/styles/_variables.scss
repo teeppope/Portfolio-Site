@@ -1,2 +1,21 @@
+//Screen Sizes Variables
+$desktop-width: 1200px;
+$tablet-width: 720px;
+
+//Layout Variables
+$base-spacing: 1.5rem;
+$base-spacing-med: $base-spacing *2;
+$base-spacing-large: $base-spacing*3;
+$base-spacing-extra-large: $base-spacing*4;
+
+//Typography Variables
 $font-stack-mono: 'Cutive Mono', monospace;
 $font-stack-sans: 'Open Sans', sans-serif;
+
+$font-base-size: 1.6rem;
+$font-base-size-med: 2rem;
+$font-base-size-large: 2.8rem;
+$font-base-size-extra-large: 3.8rem;
+
+//Colour Variables
+$white: white;

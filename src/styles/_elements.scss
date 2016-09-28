@@ -1,0 +1,21 @@
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background: $white;
+	background: url(/assets/bg.svg) no-repeat;
+	background-size: cover;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+img {
+	width: 10rem;
+	padding: $base-spacing;
+}

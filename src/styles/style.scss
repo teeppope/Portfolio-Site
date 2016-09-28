@@ -1,10 +1,10 @@
+//Importing base variables and mixins
 @import 'variables';
 @import 'mixins';
 
-h2{
-	color: gold;
-	font-family: $font-stack-mono;
-}
-p{
-	font-family: $font-stack-sans;
-}
+//Importing main site styles
+@import 'elements';
+@import 'typography';
+@import 'header';
+@import 'sclicons';
+
