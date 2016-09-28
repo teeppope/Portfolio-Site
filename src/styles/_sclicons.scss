@@ -1,9 +1,40 @@
 .scl-media{
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	flex-flow: row wrap;
+	padding: $base-spacing-med;
+	@include tablet {
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+.github,
+.linkedin,
+.twitter{
+
+	transition: transform 1.5s;
+	&:hover{
+		opacity: 0.5;
+		transform: rotateY(-180deg);
+	}
+}
+.linkedin{
+	order: -1;
+	flex-basis: 100%;
+	@include desktop {
+		order: 0;
+		flex-basis: 0;
+	}
+}
+.twitter{
+
 }
 .twitter,
 .github{
-	width: 7.5rem;
+	flex-basis: 50%;
+	@include desktop {
+		flex-basis: 0;
+		img{
+			width: 7.5rem;
+		}
+	}
 }

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 	  				"design thinking\"", 
 	  				"DRY coding\"",
 	  				"Github\"",
-	  				"using build tools\""
+	  				"web standards\""
   				];
   // type one text in the typwriter
   // keeps calling itself until the text is finished

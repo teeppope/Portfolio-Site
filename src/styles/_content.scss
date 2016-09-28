@@ -1,8 +1,18 @@
-
+.git-message{
+	font-size: $font-base-size-extra-large;
+	@include desktop {
+		font-size: $font-base-size-extra-large;
+	}
+}
 .git-commit{
 	font-size: $font-base-size;
+	@include desktop {
+		font-size: $font-base-size-med;
+	}
 }
-
+.bio{
+	margin: $base-spacing-med 0;
+}
 .email{
 	font-weight: bold;
 }
