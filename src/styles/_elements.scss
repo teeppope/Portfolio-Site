@@ -5,6 +5,7 @@ html{
 body{
 	width: 100vw;
 	height: 100vh;
+	color: $color-grey;
 	background: $white;
 	background: url(/assets/bg.svg) no-repeat;
 	background-size: cover;
@@ -14,6 +15,8 @@ main{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+	margin: 0 auto;
+	width: 80%;
 }
 img {
 	width: 10rem;
