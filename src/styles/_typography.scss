@@ -7,13 +7,18 @@ h1{
 h2{
 	font-size: $font-base-size-med;
 }
-p,button, a{
+p,
+button, 
+a, 
+input, 
+textarea{
 	font-size: $font-base-size;
 	font-family: $font-stack-sans;
+
 }
 p{
 	line-height: 1.5;
-	padding: $base-spacing 0 0 0;
+	padding: $base-spacing 0 ;
 }
 a{
 	text-decoration: none;

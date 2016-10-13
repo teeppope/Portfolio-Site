@@ -1,7 +1,6 @@
 .scl-media{
 	display: flex;
 	flex-flow: row wrap;
-	padding: $base-spacing-med;
 	@include tablet {
 		justify-content: space-around;
 		align-items: center;

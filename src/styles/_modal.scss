@@ -11,19 +11,28 @@
 	left: 0;
 	z-index: 99999;
 	opacity: 0;
-	background: rgba($white, 0.4);
+	background: rgba($white, 0.7);
 	transition: opacity 0.3s ease-in-out;
 	pointer-events: none;
 	div{
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		position: relative;
 		flex: 1;
-		background: $color-teal;
-		max-width: 50%;
+		background: rgba($color-lgt-green,1);
+		max-width: 80%;
 		height: auto;
 		padding: $base-spacing-med;
 		border-radius: 1rem;
+		box-shadow: 0.2rem 0.2rem 0.5rem rgba($color-grey, 0.5);
+		@include desktop {
+			max-width: 50%;
+		}
+		p{
+			margin-bottom: 0;
+		}
 	}
 	&:target{
 		opacity: 1;
@@ -31,10 +40,12 @@
 	}
 }
 .close{
-	padding: 1rem;
+	padding: 2rem;
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: $white;
-	border-radius: 50%;
+	color: $color-grey;
+	&:hover{
+		color: black;
+	}
 }

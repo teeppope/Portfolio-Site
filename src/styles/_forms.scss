@@ -1,25 +1,45 @@
 .request-resume{
 	display: flex;
 	flex-direction: column;
+	width: 90%;
 }
 input,
 textarea{
 	margin: $base-spacing 0;
 	padding: $base-spacing $base-spacing;
-	width: 50rem;
+	border-radius: .5rem;
 	border: none;
+	background-color: $white;
+}
+textarea{
+	height: 10rem;
 }
 input[type="submit"]{
-	background-color: $white;
-	box-shadow: 0rem .4rem  lighten($color-grey, 0.1);
-	border-radius: 0.5rem;
+	padding: 2rem;
+	color: $white;
+	background-color: $color-grey;
+	box-shadow: 0rem .4rem  rgba($color-grey, 0.3);
+	cursor: pointer;
+	&:hover{
+		background-color: rgba($color-grey, 0.5);
+	}
 }
 .btn{
 	color: $color-grey;
 	border: none;
 	border-radius: 0.5rem;
 	padding: 1.5rem 2.5rem;
-	background-color: rgba($color-green, 0.2);
-	box-shadow: 0rem .4rem  rgba($color-green, 0.5);
+	background-color: $color-lgt-green;
+	box-shadow: 0rem .3rem  rgba($color-grey, 0.5);
 	margin: $base-spacing-extra-large $base-spacing-large;
+	&:hover{
+		color: rgba($color-grey, 0.5); 
+		background-color: rgba($color-lgt-green, 0.5);
+		box-shadow: 0rem .4rem  rgba($color-grey, 0.2);
+	}
+	&:active{
+		color: rgba($color-grey, 1); 
+		background-color: rgba($color-lgt-green, 1);
+		box-shadow: 0rem .4rem  rgba($color-grey, 0.2);
+	}
 }
