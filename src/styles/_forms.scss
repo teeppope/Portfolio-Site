@@ -39,7 +39,7 @@ input[type="submit"]{
 	}
 	&:active{
 		color: rgba($color-grey, 1); 
-		background-color: rgba($color-lgt-green, 1);
+		background-color: $color-lgt-green;
 		box-shadow: 0rem .4rem  rgba($color-grey, 0.2);
 	}
 }
