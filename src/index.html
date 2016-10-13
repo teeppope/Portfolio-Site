@@ -7,22 +7,12 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-96x96.png">
 </head>
 <body>
-		<header>
-			<a href="#" rel="home">
-				<img src="/assets/logo.svg" alt="Terra's initial logo" >
-			</a>
-			<button>Request my Resume</button>
+	<header>
+		<a href="#" rel="home">
+			<img src="/assets/logo.svg" alt="Terra's initial logo" >
+		</a>
 
-			<div class="modal">
-				 <form action="https://formspree.io/terraepop@gmail.com"
-			      method="POST">
-				    <input type="text" name="name" placeholder="Your Name">
-				    <input type="email" name="_replyto" placeholder="Your email">
-				    <textarea name="message" placeholder="Write a little something about yourself"></textarea>
-				     <input type="submit" value="Send">
-				</form>
-			</div>
-		</header>
+	</header>
 	<main>
 		<div> 
 			<p>Hello! My name is Terra and</p>
@@ -57,9 +47,23 @@
 			<p>
 				Feel free to get in contact with me to take on your next web project!
 			</p>
-			<p class="email">
-				hello@terrapope.com
-			</p>
+			
+			<a href="#openModal" class="btn">Get in Touch</a>
+
+			<div id="openModal" class="modalDialog">
+				<div>
+					<a href="#close" title="Close" class="close">X</a>
+					<h1></h1>
+					<p></p>
+					 <form action="https://formspree.io/terraepop@gmail.com"
+				      method="POST" class="request-resume">
+					    <input type="text" name="name" placeholder="Your Name">
+					    <input type="email" name="_replyto" placeholder="Your email">
+					    <textarea name="message" placeholder="Write a little something about yourself"></textarea>
+					     <input type="submit" value="Send">
+					</form>
+				</div>
+			</div>
 		</section>
 		
 	</main>

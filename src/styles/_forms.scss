@@ -1,0 +1,25 @@
+.request-resume{
+	display: flex;
+	flex-direction: column;
+}
+input,
+textarea{
+	margin: $base-spacing 0;
+	padding: $base-spacing $base-spacing;
+	width: 50rem;
+	border: none;
+}
+input[type="submit"]{
+	background-color: $white;
+	box-shadow: 0rem .4rem  lighten($color-grey, 0.1);
+	border-radius: 0.5rem;
+}
+.btn{
+	color: $color-grey;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1.5rem 2.5rem;
+	background-color: rgba($color-green, 0.2);
+	box-shadow: 0rem .4rem  rgba($color-green, 0.5);
+	margin: $base-spacing-extra-large $base-spacing-large;
+}
