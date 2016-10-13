@@ -7,9 +7,11 @@ h1{
 h2{
 	font-size: $font-base-size-med;
 }
-p{
+p,button{
 	font-size: $font-base-size;
 	font-family: $font-stack-sans;
+}
+p{
 	line-height: 1.5;
 	padding: $base-spacing 0 0 0;
 }

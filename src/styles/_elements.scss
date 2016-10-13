@@ -4,7 +4,7 @@ html{
 }
 body{
 	width: 100vw;
-	height: 100%;
+	height: 100vh;
 	color: $color-grey;
 	background: $white;
 	background: url(/assets/bg.svg) no-repeat;
@@ -21,4 +21,12 @@ main{
 img {
 	width: 10rem;
 	padding: $base-spacing;
+}
+button{
+	color: $color-grey;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 1.5rem 2.5rem;
+	background-color: rgba($color-green, 0.2);
+	box-shadow: 0rem .4rem  rgba($color-green, 0.5);
 }
