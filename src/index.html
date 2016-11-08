@@ -11,22 +11,23 @@
 		<a href="#" rel="home">
 			<img src="/assets/logo.svg" alt="Terra's initial logo" >
 		</a>
-
+		<nav>
+			<a href="#">Portfolio</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</nav>
 	</header>
 	<main>
-		<div> 
-			<p>Hello! My name is Terra and</p>
-		</div>
-		<section>
+		<section class="bio">
+			<div> 
+				<p>Hello! My name is Terra and</p>
+			</div>
 			
-			<h1 class="git-message">
+			<h2 class="git-message">
 				<span class="git-commit">git commit -m</span> 
 				"I like to commit to 
 				<span class="teep-writer"></span>
-			</h1>
-
-		</section>
-		<section class="bio">
+			</h2>
 			<p>
 				I'm a Vancouver based front-end web developer ready to take on any challenge.
 			</p>
@@ -44,32 +45,9 @@
 					<img src="/assets/twitter.svg" alt="Icon link to Terra's Twitter feed">
 				</a>
 			</div>
-
-		</section>
-		<section class="contact">
-			<p>
-				Feel free to get in contact with me to take on your next web project!
-			</p>
-
-			<a href="#openModal" class="btn">Get in Touch!</a>
-
-			<div id="openModal" class="modalDialog">
-				<div>
-					<a href="#close" title="Close" class="close">X</a>
-					<h1>Let's Chat</h1>
-					<p>If you're interested in contacting me for a project, or an exciting opportunity at your company, please message me! I'm currently looking for new opportunities.</p>
-					 <form action="https://formspree.io/terraepop@gmail.com"
-				      method="POST" class="request-resume">
-					    <input type="text" name="name" placeholder="Your Name" required>
-					    <input type="email" name="_replyto" placeholder="Your email" required>
-					    <textarea name="message" placeholder="Write a little something about yourself" required></textarea>
-					     <input type="submit" value="Send">
-					</form>
-					<p class="note">I will not spam your email, I promise.</p>
-				</div>
-			</div>
 		</section>
 		
+		<div class="split-screen"></div>
 	</main>
 </body>
 </html>

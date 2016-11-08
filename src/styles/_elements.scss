@@ -7,16 +7,16 @@ body{
 	height: 100vh;
 	color: $color-grey;
 	background: $white;
-	background: url(/assets/bg.svg) no-repeat;
+	// background: url(/assets/bg.svg) no-repeat;
 	background-size: cover;
 }
 main{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	text-align: center;
 	margin: 0 auto;
-	width: 80%;
+	// width: 100%;
 }
 img {
 	width: 10rem;
