@@ -6,11 +6,10 @@ document.addEventListener('DOMContentLoaded',function(event){
   // array with texts to type in typewriter
   const dataText = [
 	  				"mobile first development\"", 
-	  				"pixel perfection\"", 
-	  				"design thinking\"", 
-	  				"DRY coding\"",
-	  				"Github\"",
-	  				"best practices\""
+	  				"pixel perfection\"",
+	  				"accessibility standards\"",
+	  				"site performance\"",
+	  				"continued learning\"",
   				];
   // type one text in the typwriter
   // keeps calling itself until the text is finished
