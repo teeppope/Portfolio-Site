@@ -17,9 +17,10 @@ main{
 	justify-content: center;
 	text-align: center;
 	margin: 0 auto;
-	width: 80%;
+	width: 90%;
 	height: calc(100vh - 132px);
 	@include tablet {
+		height: calc(100vh - 264px);
 		width: 65%;
 	}
 }

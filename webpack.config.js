@@ -5,14 +5,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const PATHS = {
 	src: path.resolve(__dirname, 'src'),
-	dist: path.resolve(__dirname, 'dist')
+	docs: path.resolve(__dirname, 'docs')
 };
 
 module.exports = {
 	mode: 'development',
 	entry: path.resolve(PATHS.src, 'js/main.js'),
 	devServer: {
-		contentBase: './dist',
+		contentBase: './docs',
 	},
 	module: {
 		rules: [
@@ -56,13 +56,13 @@ module.exports = {
 			patterns: [
 				{
 					from: path.resolve(PATHS.src, 'assets'), 
-					to: path.resolve(PATHS.dist, 'assets')
+					to: path.resolve(PATHS.docs, 'assets')
 				}
 			],
 		}),
 	],
 	output: {
-		path: PATHS.dist,
+		path: PATHS.docs,
 		filename: 'bundle.[fullhash].js'
 	},
 }

@@ -16,16 +16,18 @@
 }
 .bio{
 	position: relative;
-	margin: $base-spacing-sm 0;
+	max-width: 850px;
+	margin: $base-spacing-sm auto;
 }
 .email{
 	font-weight: bold;
 }
 .contact{
-	max-width: 350px;
+	max-width: 550px;
 	margin: 0 auto;
 	p{
 		font-size: $font-base-size-sm;
+		font-family: $font-stack-mono;
 	}
 }
 .note{

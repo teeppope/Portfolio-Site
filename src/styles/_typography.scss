@@ -12,8 +12,11 @@ button,
 a, 
 input, 
 textarea{
-	font-size: $font-base-size;
+	font-size: $font-base-size-sm;
 	font-family: $font-stack-sans;
+	@include tablet {
+		font-size: $font-base-size;
+	}
 
 }
 p{
