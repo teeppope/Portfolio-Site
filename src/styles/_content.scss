@@ -1,6 +1,10 @@
 .git-message{
 	font-size: $font-base-size-extra-large;
-	@include desktop {
+	@include tablet {
+		max-width: 65%;
+		min-width: 642px;
+		min-height: 100px;
+		margin: 0 auto;
 		font-size: $font-base-size-extra-large;
 	}
 }
@@ -12,14 +16,16 @@
 }
 .bio{
 	position: relative;
-	margin: $base-spacing-med 0;
+	margin: $base-spacing-sm 0;
 }
 .email{
 	font-weight: bold;
 }
 .contact{
+	max-width: 350px;
+	margin: 0 auto;
 	p{
-		margin-bottom: $base-spacing-med;
+		font-size: $font-base-size-sm;
 	}
 }
 .note{

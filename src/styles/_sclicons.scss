@@ -1,38 +1,17 @@
 .scl-media{
 	display: flex;
 	flex-flow: row wrap;
-	@include tablet {
-		justify-content: space-around;
-		align-items: center;
-	}
+	justify-content: space-between;
+	align-items: center;
 }
-.github,
-.linkedin,
-.twitter{
-	transition: transform 1.5s;
+.social-icon {
+	transition: transform 0.5s;
+	transform: scale(1);
 	&:hover{
-		opacity: 0.5;
-		transform: rotateY(-180deg);
+		opacity: 0.75;
+		transform: scale(1.07);
 	}
-}
-.linkedin{
-	order: -1;
-	flex-basis: 100%;
-	@include desktop {
-		order: 0;
-		flex-basis: 0;
-	}
-}
-.twitter{
-
-}
-.twitter,
-.github{
-	flex-basis: 50%;
-	@include desktop {
-		flex-basis: 0;
-		img{
-			width: 7.5rem;
-		}
+	img{
+		width: 2.5rem;
 	}
 }

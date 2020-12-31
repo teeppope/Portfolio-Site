@@ -14,11 +14,29 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	text-align: center;
 	margin: 0 auto;
 	width: 80%;
+	height: calc(100vh - 132px);
+	@include tablet {
+		width: 65%;
+	}
 }
 img {
 	width: 10rem;
 	padding: $base-spacing;
+}
+
+.sr-only {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
 }
