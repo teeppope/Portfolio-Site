@@ -57,6 +57,9 @@ module.exports = {
 				{
 					from: path.resolve(PATHS.src, 'assets'), 
 					to: path.resolve(PATHS.docs, 'assets')
+				},
+				{
+					from: "src/CNAME"
 				}
 			],
 		}),
