@@ -1,0 +1,17 @@
+.grid {
+    display: grid;
+    grid-gap: var(--base-spacing);
+}
+
+@media (min-width: 600px) {
+    .grid.two-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid.two-col.asym {
+        grid-template-columns: 30% auto;
+    }
+    .grid.two-col.asym > *:not(:first-child) {
+        grid-column: 2;
+    }
+}

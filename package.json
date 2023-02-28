@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rm -fr ./dist && webpack",
-    "start": "webpack-dev-server"
+    "build": "node build.mjs",
+    "watch": "esbuild --bundle ./src/js/main.js --outfile=./dist/main.js --watch"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/teeppope/Portfolio-Site.git"
@@ -18,20 +19,6 @@
   },
   "homepage": "https://github.com/teeppope/Portfolio-Site#readme",
   "devDependencies": {
-    "babel-loader": "^6.2.5",
-    "babel-preset-es2015-webpack2": "^1.0.0",
-    "copy-webpack-plugin": "^3.0.1",
-    "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^2.0.0-beta.4",
-    "html-webpack-plugin": "^2.22.0",
-    "node-sass": "^3.10.0",
-    "normalize.css": "^4.2.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^2.1.0-beta.25",
-    "webpack-dev-server": "^2.1.0-beta.7"
-  },
-  "dependencies": {
-    "babel-core": "^6.18.2"
+    "esbuild": "^0.17.6"
   }
 }

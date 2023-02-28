@@ -1,0 +1,48 @@
+@font-face {
+	font-family: "Butler";
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src: url("../assets/fonts/Butler.woff2") format("woff2"), url("../assets/fonts/Butler.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Butler";
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src: url("../assets/fonts/Butler-Light.woff2") format("woff2"), url("../assets/fonts/Butler-Light.woff") format("woff");
+}
+
+:root {
+    /* //Screen Sizes Variables */
+    --desktop-width: 1200px;
+    --tablet-width: 400px;
+    /* //Layout Variables */
+    --base-spacing: 1.5rem;
+    --base-spacing-med: 3rem;
+    --base-spacing-large: 4.5rem;
+    --base-spacing-extra-large: 6rem;
+    
+    /* //Typography Variables */
+    --font-stack-mono: 'Cutive Mono', monospace;
+    --font-stack-serif: 'Butler', serif;
+    
+    --font-base-size: 1rem; /* 16px ish */
+    --font-base-size-xs: 0.75rem; /* 12px ish */
+    --font-base-size-sm: 1.25rem; /* 24px ish*/
+    --font-base-size-md: 2.25rem; /* 36px */
+    --font-base-size-md-lg: 3.25rem; /* 52px */
+    --font-base-size-lg: 4rem; /* 64pxish */
+    --font-base-size-xl: 6.25rem; /* 80px ish*/
+    --font-base-size-xxl: 7.5rem; /* 120px ish*/
+    
+    /* //Colour Variables */
+    --white: white;
+    --grey: #555;
+    --lgt-grey: #bbb;
+    --teal: #00a79d;
+    --green: #2bb673;
+    --lgt-green: lighten(#b4ddc0, 10%);
+}
+
