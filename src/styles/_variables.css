@@ -19,7 +19,8 @@
     --desktop-width: 1200px;
     --tablet-width: 400px;
     /* //Layout Variables */
-    --base-spacing: 1.5rem;
+    --base-spacing: 1.5rem; /* 24px */
+    --base-spacing-sm: 0.75rem; /* 12px */
     --base-spacing-med: 3rem;
     --base-spacing-large: 4.5rem;
     --base-spacing-extra-large: 6rem;
@@ -42,7 +43,8 @@
     --grey: #555;
     --lgt-grey: #bbb;
     --teal: #00a79d;
+    --lgt-teal: #dceeed;
     --green: #2bb673;
-    --lgt-green: lighten(#b4ddc0, 10%);
+    --lgt-green: #e9f7f0;
 }
 

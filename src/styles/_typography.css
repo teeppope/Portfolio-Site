@@ -65,4 +65,50 @@ ul li:before {
 button, 
 a {
 	font-size: var(--font-base-size);
+	font-family: var(--font-stack-mono);
+	text-transform: lowercase;
+	letter-spacing: 0.5px;
 } 
+
+a {
+	color: var(--grey);
+}
+
+a:not(.button),
+a.text-link {
+	position: relative;
+	display: inline-block;
+	padding-right: 15px;
+	margin-right: 15px;
+	transition: color 0.25s ease-in;
+}
+
+a:not(.button):after,
+a.text-link:after {
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid var(--grey);
+	top: 50%;
+	transform: translate(0, -50%);
+	transition: transform 0.25s ease-in, border-color 0.25s ease-in;
+}
+
+a:hover:not(.button),
+a:focus:not(.button),
+a:hover.text-link,
+a:focus.text-link {
+	color: var(--teal);
+}
+
+a:hover:not(.button):after,
+a:focus:not(.button):after,
+a:hover.text-link:after,
+a:focus.text-link:after {
+	border-left-color: var(--teal);
+	transform: translate(5px, -50%);
+}
