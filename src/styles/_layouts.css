@@ -27,6 +27,7 @@ main{
 section {
     padding: var(--base-spacing-med) 0;
 }
+
 section:first-of-type {
     padding-top: 0;
 }
@@ -34,6 +35,10 @@ section:first-of-type {
 .grid {
     display: grid;
     grid-gap: var(--base-spacing);
+}
+
+.work-listing .grid {
+    grid-gap: 0;
 }
 
 .grid.two-col:not(.asym) .content-col {
@@ -50,13 +55,25 @@ section.asym {
     }
 
     .grid.two-col .image-col {
+        min-height: 32rem;
+    }
+    .hero-intro.grid.two-col .image-col {
         min-height: 85vh;
+    }
+
+    .grid.two-col.is-reversed .content-col {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .grid.two-col.is-reversed .image-col {
+        grid-column: 2;
     }
 
     .grid.two-col:not(.asym) .content-col {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
         padding: var(--base-spacing-large) var(--base-spacing-med);
     }
     

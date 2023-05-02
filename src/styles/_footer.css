@@ -1,0 +1,9 @@
+footer {
+    padding: var(--base-spacing-med) var(--base-spacing);
+    border-top: 2px solid var(--teal);
+    background-color: var(--lgt-green);
+}
+
+footer .title-col .icon-row {
+    justify-content: flex-start;
+}

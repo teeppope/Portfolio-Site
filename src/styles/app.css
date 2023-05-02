@@ -10,4 +10,5 @@
 
 /* Global Layout */
 @import '_header';
+@import '_footer';
 @import '_typewriter';

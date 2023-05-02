@@ -22,6 +22,8 @@ button span,
 	left: 0;
 	padding: var(--base-spacing-sm) var(--base-spacing);
 	transition: 0.3s;
+	text-align: center;
+	width: 100%;
 }
 
 button:not(.button-alt) span,

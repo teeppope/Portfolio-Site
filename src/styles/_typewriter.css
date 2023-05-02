@@ -1,3 +1,26 @@
 .typewriter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: var(--lgt-teal);
+    min-height: 22rem;
+}
+
+.git-message{
+    font-family: var(--font-stack-mono);
+	font-size:  var(--font-base-size-lg);
+}
+.git-commit{
+    font-size: var(--font-base-size);
+}
+.teep-writer {
+    display: block;
+}
+
+@media (min-width: 600px) {
+    .git-commit{
+        font-size:  var(--font-base-size-md);
+    }
 }
