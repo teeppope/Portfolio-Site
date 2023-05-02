@@ -4,9 +4,6 @@ button {
 	padding: 0;
 	cursor: pointer;
 }
-button:focus, .button:focus {
-	outline: none;
-}
 
 button, .button {
 	position: relative;
@@ -108,7 +105,6 @@ button:not(.button-alt) span:after,
 
 button:not(.button-alt) span:hover, 
 .button span:hover {
-	/* color: var(--white); */
 	background-color: var(--white);
 }
 

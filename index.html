@@ -8,8 +8,60 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
-    <a href="./styleguide.html">Styleguide</a>
+    <header>
+		<a href="./index.html" rel="home" class="site-logo">
+			<img src="./src/assets/logo.svg" alt="Terra's initial logo" >
+            <span class="sr-only">Back to home</span>
+		</a>
+		<nav>
+            <a href="./styleguide.html">Styleguide</a>
+            <a href="#">Contact</a>
+		</nav>
+	</header>
+    <main>
+        <section class="hero-intro grid two-col">
+            <div class="image-col">
+                <figure class="image-wrapper">
+                    <img src="./src/assets/terra_1.jpg" alt="Photo of Terra infront of a white background">
+                </figure>
+            </div>
+            <div class="content-col">
+                <h1 class="h1"><span class="sm-heading">Hello,</span> I'm Terra</h1>
+                <p>I’m a Vancouver based crafter of both digital and physical works.</p>
+                <p>In the digital domain, I take pride in crafting enjoyable, accessible user experiences with HTML, CSS and Javascript.</p>
+                <p>In the physical world, I’m an avid DIY-er who loves to sew and crochet.</p>
+                <div class="contact-icons icon-row">
+                    <a href="https://www.linkedin.com/in/terra-pope/" target="_blank" rel="noreferrer">
+                        <object data="./src/assets/linkedin-2.svg" width="50" height="50"> </object>
+                        <span class="sr-only">View terra's linkedin profile</span>
+                    </a>
+                    <a href="https://github.com/teeppope" target="_blank" rel="noreferrer">
+                        <object data="./src/assets/github-2.svg" width="50" height="50"> </object>
+                        <span class="sr-only">View terra's github profile</span>
+                    </a>
+                    <a href="https://www.instagram.com/terrapop/" target="_blank" rel="noreferrer">
+                        <object data="./src/assets/instagram-2.svg" width="50" height="50"> </object>
+                        <span class="sr-only">View terra's instagram profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="grid two-col asym">
+            <div class="title-col">
+                <h2>About</h2>
+            </div>
+            <div class="content-col">
+                <p>I'm baby fixie JOMO raw denim post-ironic praxis fam cold-pressed, try-hard ethical chartreuse single-origin coffee cornhole keffiyeh. Offal 8-bit fam marxism lyft air plant. Taiyaki adaptogen sartorial, bespoke quinoa 90's humblebrag wayfarers heirloom tumeric brunch. Pop-up listicle ramps farm-to-table gorpcore ascot solarpunk big mood, portland small batch lomo taxidermy iceland single-origin coffee.</p>
+            </div>
+        </section>
+        <section class="typewriter">
+            <h2 class="git-message">
+				<span class="git-commit">git commit -m</span> 
+				"I like to commit to 
+				<span class="teep-writer"></span>
+			</h2>
+        </section>
+    </main>
     <script src="./dist/main.js"></script>
 </body>
 </html>

@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="./dist/styles.css">
     <title>Styleguide</title>
 </head>
-<body>
+<body class="styleguide">
+    <header>
+		<a href="./index.html" rel="home" class="site-logo">
+			<img src="./src/assets/logo.svg" alt="Terra's initial logo" >
+            <span class="sr-only">Back to home</span>
+		</a>
+		<nav>
+            <a href="./styleguide.html">Styleguide</a>
+            <a href="#">Contact</a>
+		</nav>
+	</header>
     <main>
         <h1>Styleguide</h1>
         <section class="grid two-col asym">
@@ -41,7 +51,7 @@
         <section class="grid two-col asym">
             <h2 class="h3">Buttons/Links</h2>
             <div class="link-group">
-                <h3 class="h4">links</h3>
+                <h3 class="h4">links < a ></h3>
                 <a href="#" class="">Text Link No Class</a>
                 <a href="#" class="text-link">Text Link</a>
                 <a href="#" class="button">
@@ -49,9 +59,13 @@
                         Button Link
                     </span>
                 </a>
+                <a href="#" class="icon-link">    
+                    Icon Link
+                    <object data="./src/assets/instagram-2.svg" width="50" height="50"> </object>
+                </a>
             </div>
             <div class="button-group">
-                <h3 class="h4">buttons</h3>
+                <h3 class="h4">buttons < button ></h3>
                 <button class="">
                     <span>
                         Action Button
@@ -68,9 +82,18 @@
             <h2 class="h3">Images/Icons</h2>
             <div class="image-group">
                 <h3 class="h4">Images</h3>
+                <figure class="image-wrapper">
+                    <img src="./src/assets/terra_1.jpg" alt="Photo of Terra infront of a white background">
+                </figure>
             </div>
             <div class="icon-group">
-                <h3 class="h4">Icons</h3>
+                <h3 class="h4">Svg Icons</h3>
+                <div class="icon-row">
+                    <object data="./src/assets/twitter-2.svg" width="50" height="50"> </object>
+                    <object data="./src/assets/linkedin-2.svg" width="50" height="50"> </object>
+                    <object data="./src/assets/github-2.svg" width="50" height="50"> </object>
+                    <object data="./src/assets/instagram-2.svg" width="50" height="50"> </object>
+                </div>
             </div>
             <div class="accent-group">
                 <h3 class="h4">Accents</h3>
