@@ -1,18 +1,19 @@
 export default function typeWriter() {
-    console.log('typg');
     // array with texts to type in typewriter
     const dataText = [
-                        "mobile first development\"", 
+                        "crafting enjoyable digital experiences\"", 
                         "pixel perfection\"",
-                        "WCAG A11y best practices\""
+                        "meeting level AA WCAG 2.2 A11y standards\"",
+                        "creating a collaborative work environment\""
                     ];
     // type one text in the typwriter
     // keeps calling itself until the text is finished
+    const writingSpace = document.querySelector(".teep-writer");
     function typeText(text, i, fnCallback) {
         // check if text isn't finished yet
         if (i < (text.length)) {
         // add next character to teep-writer
-        document.querySelector(".teep-writer").innerHTML = text.substring(0, i+1);
+        writingSpace.innerHTML = text.substring(0, i+1);
     
         // wait for a while and call this function again for next character
         setTimeout(function() {
@@ -43,5 +44,7 @@ export default function typeWriter() {
         }
     }
     // start the text animation
-    StartTextAnimation(0);
+    if(writingSpace) {
+        StartTextAnimation(0);
+    }
 }

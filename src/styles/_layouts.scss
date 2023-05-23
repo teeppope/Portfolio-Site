@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+html{
+	font-family: var(--font-stack-serif);
+}
+body {
+	color: var(--grey);
+    &[inert="true"] {
+        overflow: hidden;
+    }
+}
+
+// main{
+	/* min-height: 100%; */
+	/* padding: var(--base-spacing); */
+// }
+
+.sr-only {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+section {
+    padding: var(--base-spacing-med) 0;
+    &:first-of-type {
+        padding-top: 0;
+    }
+    &.asym {
+        padding: var(--base-spacing);
+    }
+}
+
+.section-title {
+    padding: 0 var(--base-spacing);
+}
+
+.grid {
+    display: grid;
+    grid-gap: var(--base-spacing);
+    &.two-col:not(.asym) {
+        .content-col {
+            padding: var(--base-spacing);
+        }
+    }
+}
+
+.work-listing .grid {
+    grid-gap: 0;
+}
+
+@media (min-width: 600px) {
+    .grid {
+        &.two-col {
+            grid-template-columns: repeat(2, 1fr);
+            .image-col {
+                min-height: 32rem;
+            }
+            &.hero-intro {
+                .image-col {
+                    min-height: 85vh;
+                }
+            }
+            &:not(.asym) {
+                .content-col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: var(--base-spacing-large) var(--base-spacing-med);
+                }
+            }
+            &.asym {
+                grid-template-columns: 30% auto;
+                *:not(:first-child) {
+                    grid-column: 2;
+                }
+            }
+        }
+        &.is-reversed {
+            .content-col {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .image-col {
+                grid-column: 2;
+            }
+        }
+    }
+    
+    section {
+        &.asym {
+            padding: var(--base-spacing) var(--base-spacing-extra-large);
+        }
+    }
+    .section-title {
+        padding: 0 var(--base-spacing-extra-large);
+    }
+
+}

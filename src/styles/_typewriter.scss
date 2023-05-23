@@ -6,11 +6,12 @@
     text-align: center;
     background-color: var(--lgt-teal);
     min-height: 22rem;
+    padding: var(--base-spacing-sm);
 }
 
 .git-message{
     font-family: var(--font-stack-mono);
-	font-size:  var(--font-base-size-lg);
+	font-size:  var(--font-base-size-md);
 }
 .git-commit{
     font-size: var(--font-base-size);
@@ -22,5 +23,9 @@
 @media (min-width: 600px) {
     .git-commit{
         font-size:  var(--font-base-size-md);
+        .git-message{
+            font-family: var(--font-stack-mono);
+            font-size:  var(--font-base-size-lg);
+        }
     }
 }

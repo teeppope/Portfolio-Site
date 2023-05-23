@@ -1,4 +1,11 @@
-.modalDialog{
+dialog {
+	background-color: rgba(white, 0.7);
+	border: none;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.modal-backdrop{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -9,43 +16,59 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 99999;
-	opacity: 0;
-	background: rgba($white, 0.7);
 	transition: opacity 0.3s ease-in-out;
-	pointer-events: none;
-	div{
+	&[data-display="visible"] {
+		opacity: 1;
+		z-index: 99999;
+	}
+	&[data-display="hidden"] {
+		opacity: 0;
+		z-index: -99999;
+	}
+	.modal-wrapper{
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		position: relative;
-		flex: 1;
-		background: rgba($color-lgt-green,1);
+		background: var(--lgt-green);
 		max-width: 80%;
-		height: auto;
-		padding: $base-spacing-med;
-		border-radius: 1rem;
-		box-shadow: 0.2rem 0.2rem 0.5rem rgba($color-grey, 0.5);
-		@include desktop {
+		max-height: 80%;
+		box-shadow: inset 0px -7px 16px -8px rgba(0, 167, 157, 0.45) ;
+		@media (min-width: 1200px) {
 			max-width: 50%;
 		}
-		p{
-			margin-bottom: 0;
+		.modal-content {
+			position: relative;
+			padding: var(--base-spacing-med) var(--base-spacing-large);
+			overflow: scroll;
+			p {
+				margin-bottom: 0;
+			}
+		}
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: 10%;
+			height: 10%;
+		}
+		&:before {
+			bottom: -10px;
+			left: -10px;
+			border-left: 1px solid var(--teal);
+			border-bottom: 1px solid var(--teal);
+		}
+		
+		&:after {
+			top: -10px;
+			right: -10px;
+			border-right: 1px solid var(--teal);
+			border-top: 1px solid var(--teal);
 		}
 	}
-	&:target{
-		opacity: 1;
-		pointer-events: auto;
-	}
 }
-.close{
-	padding: 2rem;
+.close-modal{
 	position: absolute;
 	top: 0;
 	right: 0;
-	color: $color-grey;
-	&:hover{
-		color: black;
-	}
 }
+
