@@ -52,11 +52,11 @@
             </div>
             <div class="content-col">
                 <h3 class="h6">the short bio <span class="sr-only">of Terra</span></h3>
-                <p>I came to web development with a background in design while following my curiosity to learn how the digital world is built. I see web development as digital crafting. Using various coding language and building an interactive online experience to help users achieve their goals, is just so cool and important.</p>
+                <p>I came to web development with a background in design while following my curiosity to learn how the digital world is built. I see web development as digital crafting. Using various coding languages to build an interactive online experience so users can achieve their goals, is just so cool and important to me.</p>
                 <p>I’ve been working as a Front End Developer for 7 years in agency and freelance capacities and along the way have established a development approach based on kindness, compassion and empathy for all users. I structure project code with a focus on digital accessibility, site performance and user experience utilizing the latest HTML, CSS, and Javascript techniques.</p>
                 <button class="button open-modal">
                     <span>
-                        the long bio<span class="sr-only"> of Terra</span>
+                        read the long bio<span class="sr-only"> of Terra</span>
                     </span>
                 </button>
                 <dialog class="modal-backdrop" id="dialog-longbio" role="dialog" aria-labelledby="dialog-longbio-lable" aria-live="assertive" aria-modal="true" data-display="hidden" inert="true">
@@ -101,8 +101,8 @@
                     <h3>Bushtops Safari Camps <span class="built-at">built at <a href="https://wallop.ca" target="_blank" rel="noreferrer">Wallop</a></span></h3>
                     <p>Bushtops Camps is a collection of luxury safari destinations in Kenya and Tanzania run by the Stuart Family. In late 2019 they rebranded, requiring a newly designed and built website to showcase the new branding. We built the new website on Wordpress, creating a new custom theme built with Twig templating, Sass, and Vanilla JS.</p>
                     <ul>
-                        <li>Implemented the newly branded design system through the creation of reuse-able flexible content modules using Advanced Custom Fields for an easy authoring experience</li>
-                        <li>Maintained site Accessibility throughout the content modules through the use of conditional logic within the Twig templating language</li>
+                        <li>Implemented a flexible content module authoring experience using Advanced Custom Fields to maintain consistency of the newly branded design system across the site</li>
+                        <li>Maintained site wide accessibility within each content module through the use of conditional logic in the Twig templates to account for heading levels, specific link text, image alt text and more.</li>
                         <li>Utilized the Google Maps API and wildebeest migration data to create a <a href="https://bushtopscamps.com/experiences/wildebeest-migration/#migration-map" target="_blank" rel="noreferrer">Wildebeest Migration Map</a> to showcase where the migration overlaps with Bushtops camp locations throughout the year</li>
                     </ul>
                     <a href="https://bushtopscamps.com/" class="button-alt" target="_blank" rel="noreferrer">
@@ -144,9 +144,9 @@
                     <h3>Zingerman's Cornman Farms <span class="built-at">built at <a href="https://wallop.ca" target="_blank" rel="noreferrer">Wallop</a></span></h3>
                     <p>Cornman Farms is a culinary, event and wedding venue in Dexter, Michigan — just ten miles northwest of Ann Arbor where its parent company, Zingerman’s Community of Businesses, is based. They were looking for a new website to better represent the Cornman Farms experience. We built them a custom Wordpress theme with Twig templating, Sass and Vanilla JS.</p>
                     <ul>
-                        <li>Implemented site wide styles to adhere to the scrapbook design feel through the use of custom button shapes, animated SVG illustrations and paper texture SVG edges.</li>
-                        <li>Created a custom <a href="https://zingermanscornmanfarms.com/weddings/" target="_blank" rel="noreferrer">wedding filter form</a> to let users quickly see which wedding type offered would suit their budget and needs.</li>
-                        <li>After the main site launch we re-styled a Shopify theme to match their original site, so they could sell their culinary experiences</li>
+                        <li>Implemented site wide styles to adhere to the scrapbook design feel through the use of custom button shapes, animated SVG illustrations and paper texture SVG edges</li>
+                        <li>Created a custom <a href="https://zingermanscornmanfarms.com/weddings/" target="_blank" rel="noreferrer">wedding filter form</a> to let users quickly see which wedding type offered would suit their budget and needs</li>
+                        <li>After the main site launch, we re-styled a Shopify theme to match their original site, so they could sell their culinary experiences</li>
                     </ul>
                     <div class="button-group">
                         <a href="https://zingermanscornmanfarms.com/" class="button-alt" target="_blank" rel="noreferrer">
@@ -163,10 +163,47 @@
                 </div>
             </article>
         </section>
+        <section class="diy-listing">
+            <div class="section-title">
+                <h2><span class="built-at">some of</span>My fave DIY projects</h2>
+            </div>
+            <div class="grid four-col">
+                <figure class="image-wrapper hover-caption">
+                    <img src="./src/assets/woodworking.jpg" alt="A light wood cut piece in the shape of a monstera leaf with a triangle of plexiglass nailed to the top ">
+                    <figcaption>
+                        wood working decor
+                        <span class="built-at">made at a friends in Port Alberni</span>
+                    </figcaption>
+                </figure>
+                <figure class="image-wrapper hover-caption delay-one">
+                    <img src="./src/assets/peaches.jpg" alt="A button up collared shirt in a peach print fabric on a hanger">
+                    <figcaption>
+                        peachy patina blouse
+                        <span class="built-at">pattern by <a href="https://www.instagram.com/fridaypatterncompany/" class="caption-link" target="_blank" rel="noreferrer">Friday Pattern Company</a></span>
+                    </figcaption>
+                </figure>
+                <figure class="image-wrapper hover-caption delay-two">
+                    <img src="./src/assets/weddingdress.jpg" alt="Terra standing in her open back wedding dress in a field in front of a tree">
+                    <figcaption>
+                        my wedding dress
+                        <span class="built-at">self drafted and sewn with love and help</span>
+                    </figcaption>
+                </figure>
+                <figure class="image-wrapper hover-caption delay-three">
+                    <img src="./src/assets/crochet-blanket.jpg" alt="A white and terracotta granny square chrocheted blanked on a chair beside a snake plant">
+                    <figcaption>
+                        granny square blanket
+                        <span class="built-at">made up of 140 alternating squares</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
         <footer>
             <section class="grid two-col asym">
                 <div class="title-col">
-                    <h2 class="h3">Get in touch</h2>
+                    <h2 class="h3">Get in touch <span class="built-at">and let's chat</span></h2>
+                    <p>I’m available for a full time role or open to freelance work, please reach out if you think I'd be a good fit.</p>
                     <div class="contact-icons icon-row">
                         <a href="https://www.linkedin.com/in/terra-pope/" target="_blank" rel="noreferrer">
                             <object data="./src/assets/linkedin-2.svg" width="50" height="50" tabindex="-1"> </object>
@@ -180,15 +217,15 @@
                             <object data="./src/assets/instagram-2.svg" width="50" height="50" tabindex="-1"> </object>
                             <span class="sr-only">View terra's instagram profile</span>
                         </a>
+                        <a href="mailto:terraepop@gmail.com" target="_blank" rel="noreferrer">
+                            <object data="./src/assets/email.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">Email Terra</span>
+                        </a>
                     </div>
                 </div>
                 <div class="content-col">
-                    <p>I'm baby fixie JOMO raw denim post-ironic praxis fam cold-pressed, try-hard ethical chartreuse single-origin coffee cornhole keffiyeh.</p>
-                    <a href="mailto:terraepop@gmail.com" class="button inverse">
-                        <span>
-                            Email me
-                        </span>
-                    </a>
+                    <p>When I’m not coding or sewing, you can find me playing soccer or board games, teaching <a href="https://www.instagram.com/obee.the.ob/" target="_blank">my cat</a> new tricks <span class="built-at">(he’s really good at high fives and jumping through hoops)</span> or hanging at a park with pals.</p>
+                    <p class="built-at">This website is build using HTML, Scss, JS and compiled with esbuild. You can find it hosted on Github pages, with dns by cloudflare</p>
                 </div>
             </section>
         </footer>

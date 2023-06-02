@@ -48,6 +48,9 @@ section {
             padding: var(--base-spacing);
         }
     }
+    &.four-col {
+        grid-gap: var(--base-spacing-xs);
+    }
 }
 
 .work-listing .grid {
@@ -55,6 +58,14 @@ section {
 }
 
 @media (min-width: 600px) {
+    .grid {
+        &.four-col {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
     .grid {
         &.two-col {
             grid-template-columns: repeat(2, 1fr);
@@ -81,6 +92,9 @@ section {
                     grid-column: 2;
                 }
             }
+        }
+        &.four-col {
+            grid-template-columns: repeat(4, 1fr);
         }
         &.is-reversed {
             .content-col {

@@ -3,7 +3,7 @@ export default function typeWriter() {
     const dataText = [
                         "crafting enjoyable digital experiences\"", 
                         "pixel perfection\"",
-                        "meeting level AA WCAG 2.2 A11y standards\"",
+                        "meeting WCAG accessibility standards\"",
                         "creating a collaborative work environment\""
                     ];
     // type one text in the typwriter

@@ -74,6 +74,13 @@ ul {
 	display: block;
 	font-size: var(--font-base-size-xs);
 	font-family: var(--font-stack-mono);
+	.h3 & {
+		display: block;
+	}
+	footer & {
+		display: inline;
+
+	}
 }
 
 button, 
@@ -125,6 +132,17 @@ a {
 			color: var(--teal);
 			&:before {
 				transform: scaleX(100%);
+			}
+		}
+		&.caption-link {
+			color: var(--white);
+			font-size: var(--font-base-size-xs);
+			&:hover,
+			&:focus {
+				color: var(--white);
+				&:before {
+					background-color: var(--white);
+				}
 			}
 		}
 	}
