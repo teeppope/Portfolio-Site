@@ -3,7 +3,7 @@ import { sassPlugin } from 'esbuild-sass-plugin';
 import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
 
-await esbuild.build({
+let ctx = await esbuild.context({
     entryPoints: [
         {out: 'main', in: './src/js/main.js'},
         {out: 'styles', in: './src/styles/app.scss'},
@@ -30,4 +30,6 @@ await esbuild.build({
     ],
     outdir: 'dist',
 });
-console.log('building');
+
+await ctx.watch();
+console.log('watching...');
