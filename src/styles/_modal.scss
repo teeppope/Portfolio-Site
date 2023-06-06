@@ -29,16 +29,23 @@ dialog {
 		display: flex;
 		position: relative;
 		background: var(--lgt-green);
-		max-width: 80%;
-		max-height: 80%;
+		max-width: 99%;
+		max-height: 90%;
 		box-shadow: inset 0px -7px 16px -8px rgba(0, 167, 157, 0.45) ;
+		@media (min-width: 600px) {
+			max-width: 80%;
+			max-height: 80%;
+		}
 		@media (min-width: 1200px) {
 			max-width: 50%;
 		}
 		.modal-content {
 			position: relative;
-			padding: var(--base-spacing-med) var(--base-spacing-large);
+			padding: var(--base-spacing) var(--base-spacing);
 			overflow: scroll;
+			@media (min-width: 1200px) {
+				padding: var(--base-spacing-med) var(--base-spacing-large);
+			}
 			p {
 				margin-bottom: 0;
 			}
@@ -48,21 +55,33 @@ dialog {
 			content: '';
 			position: absolute;
 			z-index: -1;
-			width: 10%;
-			height: 10%;
+			width: var(--base-spacing-med);
+			height: var(--base-spacing-med);
+			@media (min-width: 600px) {
+				width: 10%;
+				height: 10%;
+			}
 		}
 		&:before {
-			bottom: -10px;
-			left: -10px;
-			border-left: 1px solid var(--teal);
-			border-bottom: 1px solid var(--teal);
+			bottom: -8px;
+			left: -8px;
+			@media (min-width: 600px) {
+				bottom: -12px;
+				left: -12px;
+			}
+			border-left: 2px solid var(--teal);
+			border-bottom: 2px solid var(--teal);
 		}
 		
 		&:after {
-			top: -10px;
-			right: -10px;
-			border-right: 1px solid var(--teal);
-			border-top: 1px solid var(--teal);
+			top: -8px;
+			right: -8px;
+			@media (min-width: 600px) {
+				top: -12px;
+				right: -12px;
+			}
+			border-right: 2px solid var(--teal);
+			border-top: 2px solid var(--teal);
 		}
 	}
 }

@@ -11,9 +11,11 @@
 
 .git-message{
     font-family: var(--font-stack-mono);
-	font-size:  var(--font-base-size-md);
+	font-size:  var(--font-base-size-sm-md);
+    font-weight: bold;
 }
 .git-commit{
+    font-weight: normal;
     font-size: var(--font-base-size);
 }
 .teep-writer {
@@ -21,11 +23,11 @@
 }
 
 @media (min-width: 600px) {
+    .git-message{
+        font-family: var(--font-stack-mono);
+        font-size:  var(--font-base-size-md-md);
+    }
     .git-commit{
-        font-size:  var(--font-base-size-md);
-        .git-message{
-            font-family: var(--font-stack-mono);
-            font-size:  var(--font-base-size-lg);
-        }
+        font-size:  var(--font-base-size-sm);
     }
 }

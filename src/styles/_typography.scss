@@ -15,11 +15,11 @@ h1, .h1, h2.h1 {
 
 h2, .h2 {
 	font-size: var(--font-base-size-sm);
-	font-size: clamp(var(--font-base-size-md), 4vw + 1.5rem, var(--font-base-size-xl));
+	font-size: clamp(var(--font-base-size-md-md), 4vw + 1.5rem, var(--font-base-size-xl));
 }
 h3, .h3, h4, .h4, h2.h3 {
 	font-size: var(--font-base-size-sm);
-	font-size: clamp(var(--font-base-size-sm), 2vw + 1.5rem, var(--font-base-size-md-lg));
+	font-size: clamp(var(--font-base-size-md), 2vw + 1.5rem, var(--font-base-size-md-lg));
 }
 h5, .h5 {
 	font-size: var(--font-base-size);
@@ -76,6 +76,9 @@ ul {
 	font-family: var(--font-stack-mono);
 	.h3 & {
 		display: block;
+	}
+	.h2, h2 & {		
+		margin-bottom: var(--base-spacing-xs);
 	}
 	footer & {
 		display: inline;

@@ -11,4 +11,9 @@ footer {
             font-size: var(--font-base-size);
         }
     }
+    .content-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

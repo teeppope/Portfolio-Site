@@ -30,9 +30,16 @@ section {
     padding: var(--base-spacing-med) 0;
     &:first-of-type {
         padding-top: 0;
+        @media (max-width: 1024px) {
+            padding-bottom: 0;
+        }
+        
     }
     &.asym {
         padding: var(--base-spacing);
+    }
+    &.diy-listing {
+        padding-top: 0;
     }
 }
 
@@ -50,6 +57,10 @@ section {
     }
     &.four-col {
         grid-gap: var(--base-spacing-xs);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &.asym {
+        grid-gap: var(--base-spacing-sm);   
     }
 }
 
@@ -61,6 +72,9 @@ section {
     .grid {
         &.four-col {
             grid-template-columns: repeat(2, 1fr);
+        }
+        &.asym {
+            grid-gap: var(--base-spacing);
         }
     }
 }
@@ -109,7 +123,7 @@ section {
     
     section {
         &.asym {
-            padding: var(--base-spacing) var(--base-spacing-extra-large);
+            padding: var(--base-spacing) var(--base-spacing-extra-large) var(--base-spacing-med);
         }
     }
     .section-title {
