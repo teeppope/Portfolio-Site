@@ -11,3 +11,4 @@ document.addEventListener('DOMContentLoaded',function(event){
   modalControls();
 });
 
+new EventSource('/esbuild').addEventListener('change', () => location.reload());
