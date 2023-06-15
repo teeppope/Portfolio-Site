@@ -50,6 +50,9 @@ button:not(.close-modal),
 	width: auto;
 	min-width: 9rem;
 	margin: 0 var(--base-spacing-sm) var(--base-spacing-sm);
+	.content-col & {
+		margin-left: 0;
+	}
 	&:before,
 	&:after {
 		content: '';

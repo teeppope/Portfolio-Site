@@ -1,0 +1,18 @@
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--base-spacing-sm);
+    .tag-item {
+        padding: 0 var(--base-spacing-sm);
+        margin: 0 var(--base-spacing-sm) var(--base-spacing-sm) 0;
+        font-family: var(--font-stack-mono);
+        font-size: var(--font-base-size-xs);
+        text-transform: lowercase;
+        background-color: var(--lgt-teal);
+        // color: var(--white);
+        border-radius: 20px;
+        &:before {
+            content: none;
+        }
+    }
+}

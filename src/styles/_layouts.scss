@@ -11,11 +11,6 @@ body {
     }
 }
 
-// main{
-	/* min-height: 100%; */
-	/* padding: var(--base-spacing); */
-// }
-
 .sr-only {
     clip: rect(0 0 0 0); 
     clip-path: inset(50%);
@@ -54,6 +49,9 @@ section {
         .content-col {
             padding: var(--base-spacing);
         }
+        .image-col {
+            height: 250px;
+        }
     }
     &.four-col {
         grid-gap: var(--base-spacing-xs);
@@ -64,8 +62,40 @@ section {
     }
 }
 
-.work-listing .grid {
-    grid-gap: 0;
+.work-listing {
+    padding-bottom: 0;
+    .grid {
+        grid-gap: 0;
+    }
+}
+
+.client-listing {
+    background-color: var(--lgt-teal);
+    padding-bottom: 0;
+    margin-bottom: var(--base-spacing-med);
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: var(--base-spacing-sm);
+        padding: var(--base-spacing-sm) var(--base-spacing) var(--base-spacing-med);
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            line-height: 0;
+            opacity: 0.6;
+            object, 
+            img {
+                width: auto;
+                height: 35px;
+            }
+            &:before {
+                content: none;
+            }
+
+        }
+    }
 }
 
 @media (min-width: 600px) {
@@ -77,15 +107,19 @@ section {
             grid-gap: var(--base-spacing);
         }
     }
+    .client-listing {
+        ul {
+            grid-template-columns: repeat(3, auto);
+            grid-gap: var(--base-spacing);
+        }
+    }
 }
 
 @media (min-width: 1024px) {
     .grid {
         &.two-col {
             grid-template-columns: repeat(2, 1fr);
-            .image-col {
-                min-height: 32rem;
-            }
+        
             &.hero-intro {
                 .image-col {
                     min-height: 85vh;
@@ -98,6 +132,10 @@ section {
                     justify-content: center;
                     align-items: flex-start;
                     padding: var(--base-spacing-large) var(--base-spacing-med);
+                }
+                .image-col {
+                    min-height: 32rem;
+                    height: auto;
                 }
             }
             &.asym {
@@ -129,5 +167,26 @@ section {
     .section-title {
         padding: 0 var(--base-spacing-extra-large);
     }
+    .client-listing {
+        ul {
+            grid-template-columns: repeat(4, auto);
+            grid-gap: var(--base-spacing-med);
+            padding: var(--base-spacing) var(--base-spacing-extra-large) var(--base-spacing-large);
+            li {
+                object, 
+                img {
+                    width: auto;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
 
+@media (min-width: 1310px) {
+    .client-listing {
+        ul {
+            grid-template-columns: repeat(5, auto);
+        }
+    }
 }

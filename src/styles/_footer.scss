@@ -1,5 +1,5 @@
 footer {
-    padding: var(--base-spacing-med) var(--base-spacing);
+    padding: var(--base-spacing) var(--base-spacing);
     border-top: 2px solid var(--teal);
     background-color: var(--lgt-green);
     .title-col {
@@ -7,7 +7,10 @@ footer {
         .icon-row {
             justify-content: flex-start;
         }
-        p {
+    }
+    p {
+        font-size: var(--font-base-size);
+        a  {
             font-size: var(--font-base-size);
         }
     }
