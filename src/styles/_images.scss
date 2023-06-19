@@ -18,6 +18,11 @@
         transform: translateX(0);
         transition: transform ease-in 650ms
     }
+    .diy-listing & {
+        &:before {
+            background-color: var(--lgt-green);
+        }
+    }
     &.in-view {
         &:before {
             transform: translateX(-100%);

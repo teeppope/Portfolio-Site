@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 html{
-	font-family: var(--font-stack-serif);
+	font-family: var(--font-stack-sans);
+	// font-family: var(--font-stack-serif);
 }
 body {
 	color: var(--grey);
@@ -25,10 +26,7 @@ section {
     padding: var(--base-spacing-med) 0;
     &:first-of-type {
         padding-top: 0;
-        @media (max-width: 1024px) {
-            padding-bottom: 0;
-        }
-        
+        padding-bottom: 0;
     }
     &.asym {
         padding: var(--base-spacing);
@@ -63,6 +61,7 @@ section {
 }
 
 .work-listing {
+    padding-top: 0;
     padding-bottom: 0;
     .grid {
         grid-gap: 0;
@@ -120,7 +119,7 @@ section {
         &.two-col {
             grid-template-columns: repeat(2, 1fr);
         
-            &.hero-intro {
+            &:not(.asym).hero-intro {
                 .image-col {
                     min-height: 85vh;
                 }
@@ -160,12 +159,16 @@ section {
     }
     
     section {
-        &.asym {
+        &.asym,
+        &.diy-listing {
             padding: var(--base-spacing) var(--base-spacing-extra-large) var(--base-spacing-med);
         }
     }
     .section-title {
         padding: 0 var(--base-spacing-extra-large);
+        .diy-listing & {
+            padding: 0;
+        }
     }
     .client-listing {
         ul {

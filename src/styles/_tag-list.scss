@@ -8,11 +8,16 @@
         font-family: var(--font-stack-mono);
         font-size: var(--font-base-size-xs);
         text-transform: lowercase;
-        background-color: var(--lgt-teal);
         // color: var(--white);
         border-radius: 20px;
         &:before {
             content: none;
         }
+    }
+    &.personal .tag-item {
+        background-color: var(--lgt-green);
+    }
+    &.professional .tag-item {
+        background-color: var(--lgt-teal);
     }
 }

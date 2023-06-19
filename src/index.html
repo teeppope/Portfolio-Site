@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles.css">
     <title>Terra Pope</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-96x96.png">
@@ -25,60 +29,16 @@
                 </figure>
             </div>
             <div class="content-col">
-                <h1 class="h1"><span class="sm-heading">Hello,</span> I'm Terra</h1>
-                <p>I’m a Vancouver based web developer passionate about crafting seamless and beautiful digital experiences with HTML, CSS and JavaScript.</p>
-                <p>Away from the screen I find joy in physical crafting through teaching sewing classes, sewing my own clothing and crocheting.</p>
-                <div class="contact-icons icon-row">
-                    <a href="https://www.linkedin.com/in/terra-pope/" target="_blank" rel="noreferrer">
-                        <object data="./assets/linkedin.svg" width="50" height="50" tabindex="-1"> </object>
-                        <span class="sr-only">View terra's linkedin profile</span>
-                    </a>
-                    <a href="https://www.instagram.com/terrapop/" target="_blank" rel="noreferrer">
-                        <object data="./assets/instagram.svg" width="50" height="50" tabindex="-1"> </object>
-                        <span class="sr-only">View terra's instagram profile</span>
-                    </a>
-                    <a href="https://github.com/teeppope" target="_blank" rel="noreferrer">
-                        <object data="./assets/github.svg" width="50" height="50" tabindex="-1"> </object>
-                        <span class="sr-only">View terra's github profile</span>
-                    </a>
-                    <a href="https://codepen.io/terrapope" target="_blank" rel="noreferrer">
-                        <object data="./assets/codepen.svg" width="50" height="50" tabindex="-1"> </object>
-                        <span class="sr-only">View terra's codepen profile</span>
-                    </a>
-                </div>
+                <h1 class="sm-heading">hello, I'm Terra</h1>
+                <p class="hero-paragraph">I’m a Vancouver based web developer passionate about crafting seamless and beautiful digital experiences.</p>
+                <ul class="tag-list personal">
+                    <li class="tag-item">UX & UI</li>
+                    <li class="tag-item">Web accessibility</li>
+                    <li class="tag-item">digital crafting</li>
+                </ul>
             </div>
         </section>
-        <section class="about grid two-col asym">
-            <div class="title-col">
-                <h2>About me</h2>
-            </div>
-            <div class="content-col">
-                <p>With a background in design, and an interest in finding the intersection of art and science, I was driven to explore web development as a form of digital crafting.</p>
-                <p>Over my seven-year career, I’ve worked alongside talented designers and project managers to provide engaging, vivid online experiences for clients across the hospitality, tourism, healthcare, and technology industries. Through these experiences I’ve honed an empathetic and compassionate approach to web development with a strong focus in web accessibility, site performance and end user experience.</p>
-                <p>Driven by curiosity, I continually explore new advancements in web development, while also expanding my abilities in sewing and crocheting.</p>
-                <button class="button open-modal">
-                    <span>
-                        read a little more<span class="sr-only"> about me</span>
-                    </span>
-                </button>
-                <dialog class="modal-backdrop" id="dialog-longbio" role="dialog" aria-labelledby="dialog-longbio-lable" aria-live="assertive" aria-modal="true" data-display="hidden" inert="true">
-                    <div class="modal-wrapper">
-                        <div class="modal-content">
-                            <h3 id="dialog-longbio-lable" class="h6">more about me</h3>
-                            <button class="close-modal">
-                                <span class="ex"></span>
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <p>I've always been fascinated by the intersection of art and science, which was sparked by my exposure to the digital world through platforms like Neopets and summers spent playing video games like Mario Kart.</p>
-                            <p>After completing my Diploma in Graphic Communications and Print Design from the Southern Alberta Institute of Technology, I relocated to Vancouver to work as a UI Designer at a web design and development company. It was there that I discovered my passion for coding and transforming designs into interactive experiences.</p>
-                            <p>In 2016, I transitioned from a designer to a developer by attending the Web Development bootcamp at Red Academy, where the course covered HTML, CSS, Javascript, Wordpress, PHP, web accessibility, Angular/React, build tools, and Git.</p>
-                            <p>I have 7 years of experience working freelance and at digital agencies, building and maintaining websites for clients in various industries such as hospitality, tourism, healthcare, and technology. I have collaborated closely with designers, project managers, and clients, actively participating in all project stages and implementing an organized approach to the technical process. My expertise lies in web accessibility, performance optimization, and delivering engaging user experiences. I am proficient in working with Wordpress, Shopify, Squarespace, and React projects.</p>
-                            <p>Recently, I have been exploring static site generators, furthering my knowledge of web accessibility, and expanding my skills in sewing and crocheting.</p>
-                        </div>
-                    </div>
-                </dialog>
-            </div>
-        </section>
+
         <section class="typewriter">
             <h2 class="git-message">
 				<span class="git-commit">git commit -m</span> 
@@ -88,7 +48,7 @@
         </section>
 
         <section class="work-listing">
-            <div class="section-title">
+            <div class="sr-only">
                 <h2>
                     <span class="built-at">a selection of</span> 
                     Web projects
@@ -105,7 +65,7 @@
                         Bushtops Safari Camps 
                         <span class="built-at">built at <a href="https://wallop.ca" target="_blank" rel="noreferrer">Wallop</a></span>
                     </h3>
-                    <ul class="tag-list">
+                    <ul class="tag-list professional">
                         <li class="tag-item">Wordpress</li>
                         <li class="tag-item">ACF</li>
                         <li class="tag-item">Twig</li>
@@ -128,7 +88,7 @@
                 </div>
                 <div class="content-col">
                     <h3>Daanaa <span class="built-at">built at <a href="https://engagemassive.com/" target="_blank" rel="noreferrer">Massive Media</a></span></h3>
-                    <ul class="tag-list">
+                    <ul class="tag-list professional">
                         <li class="tag-item">Wordpress</li>
                         <li class="tag-item">Gutenberg</li>
                         <li class="tag-item">ACF</li>
@@ -152,7 +112,7 @@
                 </div>
                 <div class="content-col">
                     <h3>Zingerman's Cornman Farms <span class="built-at">built at <a href="https://wallop.ca" target="_blank" rel="noreferrer">Wallop</a></span></h3>
-                    <ul class="tag-list">
+                    <ul class="tag-list professional">
                         <li class="tag-item">Wordpress</li>
                         <li class="tag-item">ACF</li>
                         <li class="tag-item">Twig</li>
@@ -180,7 +140,6 @@
         <section class="client-listing">
             <div class="section-title">
                 <h2 class="h3">
-                    <span class="built-at">a selection of</span> 
                     Clients and companies
                 </h2>
             </div>
@@ -243,10 +202,47 @@
 
         </section>
 
+        <section class="about grid two-col asym">
+            <div class="title-col">
+                <h2 class="h3">About me</h2>
+                <ul class="tag-list personal">
+                    <li class="tag-item">Cat trainer</li>
+                    <li class="tag-item">Sewing instructor</li>
+                    <li class="tag-item">Central defender</li>
+                    <li class="tag-item">Casual cyclist</li>
+                    <li class="tag-item">Cider-enthusiast</li>
+                </ul>
+            </div>
+            <div class="content-col">
+                <p>With a background in design, and an interest in finding the intersection of art and science, I was driven to explore web development as a form of digital crafting.</p>
+                <p>Over my seven-year career, I’ve worked alongside talented designers and project managers to provide engaging, vivid online experiences for clients across various industries. Through these experiences I’ve honed an empathetic and compassionate approach to web development with a strong focus in web accessibility, site performance and end user experience.</p>
+                <button class="button open-modal">
+                    <span>
+                        read a little more<span class="sr-only"> about me</span>
+                    </span>
+                </button>
+                <dialog class="modal-backdrop" id="dialog-longbio" role="dialog" aria-labelledby="dialog-longbio-lable" aria-live="assertive" aria-modal="true" data-display="hidden" inert="true">
+                    <div class="modal-wrapper">
+                        <div class="modal-content">
+                            <h3 id="dialog-longbio-lable" class="h6">more about me</h3>
+                            <button class="close-modal">
+                                <span class="ex"></span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <p>I've always been fascinated by the intersection of art and science, which was sparked by my exposure to the digital world through platforms like Neopets and summers spent playing video games like Mario Kart.</p>
+                            <p>After completing my Diploma in Graphic Communications and Print Design from the Southern Alberta Institute of Technology, I relocated to Vancouver to work as a UI Designer at a web design and development company. It was there that I discovered my passion for coding and transforming designs into interactive experiences.</p>
+                            <p>In 2016, I transitioned from a designer to a developer by attending the Web Development bootcamp at Red Academy, where the course covered HTML, CSS, Javascript, Wordpress, PHP, web accessibility, Angular/React, build tools, and Git.</p>
+                            <p>I have 7 years of experience working freelance and at digital agencies, building and maintaining websites for clients in various industries such as hospitality, tourism, healthcare, and technology. I have collaborated closely with designers, project managers, and clients, actively participating in all project stages and implementing an organized approach to the technical process. My expertise lies in web accessibility, performance optimization, and delivering engaging user experiences. I am proficient in working with Wordpress, Shopify, Squarespace, and React projects.</p>
+                            <p>Recently, I have been exploring static site generators, furthering my knowledge of web accessibility, and expanding my skills in sewing and crocheting.</p>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </section>
+
         <section class="diy-listing">
             <div class="section-title">
-                <h2>
-                    <span class="built-at">a selection of</span>
+                <h2 class="h3">
                     DIY projects
                 </h2>
             </div>
@@ -286,33 +282,38 @@
         <footer>
             <section class="grid two-col asym">
                 <div class="title-col">
-                    <h2 class="h3">Get in touch <span class="built-at">and let's chat</span></h2>
-                    <p>I’m available for a full time role or open to freelance work, please reach out if you think I'd be a good fit.</p>
-                    <div class="contact-icons icon-row">
+                    <h2 class="h3">Get in touch</h2>
+                    <div class="contact-icons icon-row contact-links">
+                        <a href="mailto:terraepop@gmail.com" target="_blank" rel="noreferrer">
+                            Email
+                            <!-- <object data="./assets/email.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">Email Terra</span> -->
+                        </a>
                         <a href="https://www.linkedin.com/in/terra-pope/" target="_blank" rel="noreferrer">
-                            <object data="./assets/linkedin.svg" width="50" height="50" tabindex="-1"> </object>
-                            <span class="sr-only">View terra's linkedin profile</span>
+                            LinkedIn
+                            <!-- <object data="./assets/linkedin.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">View terra's linkedin profile</span> -->
                         </a>
                         <a href="https://www.instagram.com/terrapop/" target="_blank" rel="noreferrer">
-                            <object data="./assets/instagram.svg" width="50" height="50" tabindex="-1"> </object>
-                            <span class="sr-only">View terra's instagram profile</span>
+                            Instagram
+                            <!-- <object data="./assets/instagram.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">View terra's instagram profile</span> -->
                         </a>
                         <a href="https://github.com/teeppope" target="_blank" rel="noreferrer">
-                            <object data="./assets/github.svg" width="50" height="50" tabindex="-1"> </object>
-                            <span class="sr-only">View terra's github profile</span>
+                            Github
+                            <!-- <object data="./assets/github.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">View terra's github profile</span> -->
                         </a>
                         <a href="https://codepen.io/terrapope" target="_blank" rel="noreferrer">
-                            <object data="./assets/codepen.svg" width="50" height="50" tabindex="-1"> </object>
-                            <span class="sr-only">View terra's codepen profile</span>
-                        </a>
-                        <a href="mailto:terraepop@gmail.com" target="_blank" rel="noreferrer">
-                            <object data="./assets/email.svg" width="50" height="50" tabindex="-1"> </object>
-                            <span class="sr-only">Email Terra</span>
+                            Codepen
+                            <!-- <object data="./assets/codepen.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">View terra's codepen profile</span> -->
                         </a>
                     </div>
                 </div>
                 <div class="content-col">
-                    <p>When I’m not coding or sewing, you can find me playing soccer or board games, teaching <a href="https://www.instagram.com/obee.the.ob/" target="_blank">my cat</a> new tricks (he’s really good at high fives and jumping through hoops) or hanging at a park with pals.</p>
+                    <h3 class="built-at">let's chat</h3>
+                    <p class="hero-paragraph">I’m available for a full time role or open to freelance work, please reach out if you think I'd be a good fit.</p>
                     <p class="built-at">This website is built using HTML, Scss, JS and compiled with esbuild. You can find it hosted on Netlify.</p>
                 </div>
             </section>

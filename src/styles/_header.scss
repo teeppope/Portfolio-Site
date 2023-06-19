@@ -4,19 +4,17 @@ header {
     grid-template-columns: 70px auto;
     align-items: center;
     grid-gap: var(--base-spacing);
-    // background: var(--lgt-teal);
     position: absolute;
     top: 0;
 	width: 100vw;
 	z-index: 100;
     .site-logo img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
+        opacity: 0.65;
+        padding: 0 0 0 var(--base-spacing);
     }
     
-    .site-logo img{
-        padding: var(--base-spacing-sm) var(--base-spacing-sm) var(--base-spacing-sm) var(--base-spacing);
-    }
     nav {
         position: fixed;
         right: 0;
@@ -25,16 +23,17 @@ header {
         padding: 0 var(--base-spacing);
         a {
             margin: 0 var(--base-spacing-xs);
-            padding: var(--base-spacing-xs);
+            padding: var(--base-spacing-sm);
             &:after {
                 content: "";
                 display: block;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 200%;
+                width: 100%;
                 height: 100%;
-                background-color: rgba(255,255,255, 0.7);
+                background-color: var(--lgt-teal);
+                border: solid 1px var(--white);
                 z-index: -1;
             }
         }
@@ -48,6 +47,7 @@ header {
         .site-logo img {
             width: 100%;
             height: 100%;
+            padding: var(--base-spacing-sm) var(--base-spacing-sm) var(--base-spacing-sm) var(--base-spacing);
         }
     }
 }
