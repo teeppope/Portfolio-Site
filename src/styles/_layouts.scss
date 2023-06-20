@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+html{
+	font-family: var(--font-stack-sans);
+	font-weight: 300;
+}
+body {
+	color: var(--grey);
+    &[inert="true"] {
+        overflow: hidden;
+    }
+}
+
+.sr-only {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+section {
+    padding: var(--base-spacing-med) 0;
+    &:first-of-type {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &.asym {
+        padding: var(--base-spacing);
+    }
+    &.diy-listing {
+        padding-top: 0;
+    }
+}
+
+.section-title {
+    padding: 0 var(--base-spacing);
+}
+
+.grid {
+    display: grid;
+    grid-gap: var(--base-spacing);
+    &.two-col:not(.asym) {
+        .content-col {
+            padding: var(--base-spacing);
+        }
+        .image-col {
+            height: 250px;
+        }
+    }
+    &.four-col {
+        grid-gap: var(--base-spacing-xs);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &.asym {
+        grid-gap: var(--base-spacing-sm);   
+    }
+}
+
+.work-listing {
+    padding-top: 0;
+    padding-bottom: 0;
+    .grid {
+        grid-gap: 0;
+    }
+}
+
+.client-listing {
+    background-color: var(--lgt-teal);
+    padding-bottom: 0;
+    margin-bottom: var(--base-spacing-med);
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: var(--base-spacing-sm);
+        padding: var(--base-spacing-sm) var(--base-spacing) var(--base-spacing-med);
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            line-height: 0;
+            opacity: 0.6;
+            object, 
+            img {
+                width: auto;
+                height: 35px;
+            }
+            .zingermans-logo {
+                height: 40%;
+            }
+            &:before {
+                content: none;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .grid {
+        &.four-col {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &.asym {
+            grid-gap: var(--base-spacing);
+        }
+    }
+    .client-listing {
+        ul {
+            grid-template-columns: repeat(3, auto);
+            grid-gap: var(--base-spacing);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        &.two-col {
+            grid-template-columns: repeat(2, 1fr);
+        
+            &:not(.asym).hero-intro {
+                .image-col {
+                    min-height: 85vh;
+                }
+            }
+            &:not(.asym) {
+                .content-col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding: var(--base-spacing-large) var(--base-spacing-med);
+                }
+                .image-col {
+                    min-height: 32rem;
+                    height: auto;
+                }
+            }
+            &.asym {
+                grid-template-columns: 30% auto;
+                *:not(:first-child) {
+                    grid-column: 2;
+                }
+            }
+        }
+        &.four-col {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &.is-reversed {
+            .content-col {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .image-col {
+                grid-column: 2;
+            }
+        }
+    }
+    
+    section {
+        &.asym,
+        &.diy-listing {
+            padding: var(--base-spacing) var(--base-spacing-extra-large) var(--base-spacing-med);
+        }
+    }
+    .section-title {
+        padding: 0 var(--base-spacing-extra-large);
+        .diy-listing & {
+            padding: 0;
+        }
+    }
+    .client-listing {
+        ul {
+            grid-template-columns: repeat(4, auto);
+            grid-gap: var(--base-spacing-med);
+            padding: var(--base-spacing) var(--base-spacing-extra-large) var(--base-spacing-large);
+            li {
+                object, 
+                img {
+                    width: auto;
+                    height: 50px;
+                }
+                .zingermans-logo {
+                    height: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1310px) {
+    .client-listing {
+        ul {
+            grid-template-columns: repeat(5, auto);
+        }
+    }
+}

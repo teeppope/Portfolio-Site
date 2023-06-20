@@ -1,0 +1,32 @@
+footer {
+    padding: var(--base-spacing) var(--base-spacing);
+    background-color: var(--lgt-green);
+    .title-col {
+        .contact-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a:not(.text-link) {
+                font-weight: 300;
+                margin-bottom: var(--base-spacing-sm);
+            }
+        }
+    }
+    .content-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hero-paragraph {
+        margin-bottom: var(--base-spacing);
+    }
+    @media (min-width: 1024px) {
+        .title-col {
+            padding-right: var(--base-spacing-large);
+            .contact-links {
+                flex-direction: column;
+            align-items: flex-start;
+            }
+        }
+    }
+}

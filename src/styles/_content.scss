@@ -1,36 +1,44 @@
-.git-message{
-	font-size: $font-base-size-extra-large;
-	@include tablet {
-		max-width: 65%;
-		min-width: 642px;
-		min-height: 100px;
-		margin: 0 auto;
-		font-size: $font-base-size-extra-large;
-	}
-}
-.git-commit{
-	font-size: $font-base-size;
-	@include desktop {
-		font-size: $font-base-size-med;
-	}
-}
-.bio{
-	position: relative;
-	max-width: 850px;
-	margin: $base-spacing-sm auto;
-}
-.email{
-	font-weight: bold;
-}
-.contact{
-	max-width: 550px;
-	margin: 0 auto;
-	p{
-		font-size: $font-base-size-sm;
-		font-family: $font-stack-mono;
-	}
-}
-.note{
-	font-size: 1.4rem;
-	font-style: italic;
-}
+// .git-message{
+// 	font-size: $font-base-size-extra-large;
+// 	@include desktop {
+// 		font-size: $font-base-size-extra-large;
+// 	}
+// }
+// .git-commit{
+// 	font-size: $font-base-size;
+// 	@include desktop {
+// 		font-size: $font-base-size-med;
+// 	}
+// }
+// .bio{
+// 	flex-basis: 100%;
+// 	@include tablet {
+// 		flex-basis: 50%;
+// 		// padding: 0 $base-spacing-large;
+// 		// position: relative;
+// 		margin: $base-spacing-med $base-spacing-large;
+// 	}
+// }
+// .email{
+// 	font-weight: bold;
+// }
+// .contact{
+// 	p{
+// 		margin-bottom: $base-spacing-med;
+// 	}
+// }
+// .note{
+// 	font-size: 1.4rem;
+// 	font-style: italic;
+// }
+// .split-screen{
+// 	flex-basis: 0;
+// 	@include tablet {
+// 		flex-basis: 50%;
+// 		height: 100vh;
+// 		background: linear-gradient(to top, rgba($color-lgt-green,0.6), rgba($color-lgt-green, 0.8)), 
+// 		url(/assets/terra_1.jpg) center;
+// 		background-size: cover;
+// 		box-shadow: -0.2rem 0 1rem $color-lgt-grey; 
+// 	}
+// }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve">
+  <style>
+    .st0{fill:none;stroke:#000;stroke-width:20;stroke-miterlimit:10}
+  </style>
+  <g id="Layer_2">
+    <path class="st0" d="M44.6 94.2h424c14.7 0 26.5 11.9 26.5 26.5v271.1c0 14.7-11.9 26.5-26.5 26.5h-424c-14.7 0-26.5-11.9-26.5-26.5v-271c0-14.7 11.9-26.6 26.5-26.6z"/>
+    <path class="st0" d="m23.3 100.1 213.8 213.8c10.4 10.4 27.2 10.4 37.5 0L488.8 99.6M25.8 410.6l154-153.9M331.8 256.7l155.6 154"/>
+  </g>
+</svg>

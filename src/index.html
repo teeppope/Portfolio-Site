@@ -1,61 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Terra Pope</title>
-	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans:300" rel="stylesheet">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-96x96.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Terra Pope</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-96x96.png">
 </head>
-<body>
-	<header>
-		<a href="#" rel="home">
-			<img src="/assets/logo.svg" alt="Terra's initial logo" >
-		</a>
+<body aria-haspopup="dialog">
+    <header>
+        <figure class="site-logo">
+            <img src="./assets/logo.svg" alt="Terra's initial logo" >
+        </figure>
+		<nav>
+            <a href="mailto:terraepop@gmail.com" target="_blank">Contact</a>
+		</nav>
 	</header>
-	<main>
-		<div> 
-			<p>Hey there! My name is Terra</p>
-		</div>
-		<section>
-			
-			<h1 class="git-message">
+    <main>
+        <section class="hero-intro grid two-col">
+            <div class="image-col">
+                <figure class="image-wrapper">
+                    <img src="./assets/terra_1.jpg" alt="Photo of Terra infront of a white background">
+                </figure>
+            </div>
+            <div class="content-col">
+                <h1 class="sm-heading">Hello, I'm Terra!</h1>
+                <p class="hero-paragraph">I’m a Vancouver based web developer passionate about crafting seamless and beautiful digital experiences.</p>
+                <ul class="tag-list professional">
+                    <li class="tag-item">digital crafting</li>
+                    <li class="tag-item">UX & UI</li>
+                    <li class="tag-item">Web accessibility</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="typewriter">
+            <h2 class="git-message">
 				<span class="git-commit">git commit -m</span> 
 				"I like to commit to 
 				<span class="teep-writer"></span>
-			</h1>
+			</h2>
+        </section>
 
-		</section>
-		<section class="bio">
-			<p>
-				I'm a Vancouver, CA based front-end web developer with a focus in building enjoyable user experiences relating to animations, speed and accessibility. Over the past 5 years I've worked in various agency settings along with the occasional freelance web project. Agency work and freelancing have granted me the opportunities to work with Wordpress, HTML, CSS, JS and even dabble with Shopify, Laravel and React/Gatsby. I strongly value continuous learning and am always willing to test out new ideas/languages.
-			</p>
-			<p>When I'm not coding you can find me crafting on my couch, taking my cat to the park, or biking around the city.</p>
-		</section>
-		<section class="contact">
-			<div class="scl-media">
-				<a href="https://github.com/teeppope" target="_blank" class="social-icon">
-					<img src="/assets/github.svg" alt="Icon link to Terra's Github profile" >
-					<span class="sr-only">- opens a new tab</span>
-				</a>
-				<a href="https://codepen.io/terrapope" target="_blank" class="social-icon">
-					<img src="/assets/codepen.svg" alt="Icon link to Terra's Codepen">
-					<span class="sr-only">- opens a new tab</span>
-				</a>
-				<a href="https://www.linkedin.com/in/terra-pope/" target="_blank" class="social-icon">
-					<img src="/assets/linkedin.svg" alt="Icon link to Terra's LinkedIn profile" >
-					<span class="sr-only">- opens a new tab</span>
-				</a>
-				<a href="https://www.instagram.com/terrapop/" target="_blank" class="social-icon">
-					<img src="/assets/instagram.svg" alt="Icon link to Terra's Instagram">
-					<span class="sr-only">- opens a new tab</span>
-				</a>
-				<a href="mailto:terraepop@gmail.com" target="_blank" class="social-icon">
-					<img src="/assets/mail.svg" alt="Icon link to Email Terra's">
-					<span class="sr-only">- opens your email app</span>
-				</a>
-			</div>
-		</section>
-		
-	</main>
+        <section class="work-listing">
+            <div class="sr-only">
+                <h2>
+                    <span class="built-at">a selection of</span> 
+                    Web projects
+                </h2>
+            </div>
+            <article class="grid two-col">
+                <div class="image-col">
+                    <figure class="image-wrapper">
+                        <img src="./assets/bushtops.jpg" alt="Two giraffes graze among the trees with the Bushtops Camps logo centered in the middle of the image">
+                    </figure>
+                </div>
+                <div class="content-col">
+                    <h3>
+                        Bushtops Safari Camps 
+                        <span class="built-at">built at <a href="https://wallop.ca" target="_blank" rel="noreferrer">Wallop</a></span>
+                    </h3>
+                    <ul class="tag-list professional">
+                        <li class="tag-item">JavaScript</li>
+                        <li class="tag-item">Google Maps API</li>
+                        <li class="tag-item">CSS animations</li>
+                    </ul>
+                    <p>Bushtops Camps is a luxury safari brand based in Kenya and Tanzania. We developed their new website on Wordpress, aligning it with their updated branding. As a unique feature, the client wanted to highlight the Wildebeest migration's timing at each Bushtops camp, so we built a custom Migration Map using the Google Maps API and Wildebeest migration data to achieve this goal. The new website also streamlined information about the Bushtops experience for guests, increasing overall engagement and direct bookings.</p>
+                    <a href="https://bushtopscamps.com/" class="button-alt" target="_blank" rel="noreferrer">
+                        <span>
+                            Visit the <span class="sr-only">Bushtops Camps</span> site
+                        </span>
+                    </a>
+                </div>
+            </article>
+            <article class="grid two-col is-reversed">
+                <div class="image-col">
+                    <figure class="image-wrapper">
+                        <img src="./assets/daanaa.jpg" alt="The daanaa wordmark on a faded abstract dark blue background">
+                    </figure>
+                </div>
+                <div class="content-col">
+                    <h3>Daanaa <span class="built-at">built at <a href="https://engagemassive.com/" target="_blank" rel="noreferrer">Massive Media</a></span></h3>
+                    <ul class="tag-list professional">
+                        <li class="tag-item">Gutenberg</li>
+                        <li class="tag-item">PHP</li>
+                        <li class="tag-item">CSS animations</li>
+                    </ul>
+                    <p>Daanaa is an engineering startup specializing in groundbreaking energy conduction and storage methods. We collaborated with the client to create a new elevated brand and accompanying website to showcase their technology. By incorporating a blend of CSS animations, user friendly informational design, and adaptable content modules, we crafted a custom-built Wordpress website that exceeded client aspirations. This approach ensures that the site can evolve alongside the company, providing a solid foundation for their future growth.</p>
+                    <a href="https://daanaa.com/" class="button-alt" target="_blank" rel="noreferrer">
+                        <span>
+                            Visit the <span class="sr-only">Daanaa</span> site
+                        </span>
+                    </a>
+                </div>
+            </article>
+            <article class="grid two-col">
+                <div class="image-col">
+                    <figure class="image-wrapper">
+                        <img src="./assets/graduate.jpg" alt="A white Graduate Hotels logo on top of a hotel room with two queen beds and a side table sitting between them">
+                    </figure>
+                </div>
+                <div class="content-col">
+                    <h3>Graduate Hotels <span class="built-at">built at <a href="https://wallop.ca" target="_blank" rel="noreferrer">Wallop</a></span></h3>
+                    <ul class="tag-list professional">
+                        <li class="tag-item">Accessibility</li>
+                        <li class="tag-item">Wordpress Multisite</li>
+                        <li class="tag-item">speed optimizations</li>
+                    </ul>
+                    <p>Graduate Hotels is a collection of hotels located in college towns across the USA and UK celebrating the college aesthetic. We built them a custom Wordpress multisite using a parent/child theme setup for brand and location sites. This scalable solution ensures a consistent user experience as their hotel collection expands. To comply with the Americans with Disabilities Act, the site was meticulously crafted to adhere to WCAG 2.0 + 2.1 accessibility guidelines. Through extensive automated and manual testing, we identified and resolved any issues, guaranteeing an inclusive experience for guests of all abilities to book at any Graduate Hotel location.</p>
+                    <div class="button-group">
+                        <a href="https://www.graduatehotels.com/" class="button-alt" target="_blank" rel="noreferrer">
+                            <span>
+                                Visit the <span class="sr-only">Graduate Hotels</span> site
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="client-listing">
+            <div class="section-title">
+                <h2 class="h3">
+                    Clients and companies
+                </h2>
+            </div>
+            <ul class="client-list">
+                <li>
+                    <object data="./assets/royalcanin.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Royal Canin logo</span>
+                </li>
+                <li>
+                    <img src="./assets/exploreedmonton.webp" alt="Explore Edmonton logo">
+                </li>
+                <li>
+                    <object data="./assets/pacificbeachcomber.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Pacific Beachcomber logo</span>
+                </li>
+                <li>
+                    <object data="./assets/autograph.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Autograph Collection Hotels logo</span>
+                </li>
+                <li>
+                    <object data="./assets/bunkhouse.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Bunkhouse Hotels logo</span>
+                </li>
+                <li>
+                    <img src="./assets/zingermans-logo.png" class="zingermans-logo" alt="Zingermans Cornman Farms logo">
+                </li>
+                <li>
+                    <object data="./assets/mirrorlakeinn.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Mirror Lake Inn logo</span>
+                </li>
+                <li>
+                    <object data="./assets/mirival.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Mirival Hotels logo</span>
+                </li>
+                <li>
+                    <img src="./assets/maple.png" alt="Maple health logo">
+                </li>
+                <li>
+                    <object data="./assets/precisionsails.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">Precision Sails logo</span>
+                </li>
+                <li>
+                    <img src="./assets/ddb.png" alt="DDB logo">
+                </li>
+                <li>
+                    <img src="./assets/wallop.png" alt="Wallop logo">
+                </li>
+                <li>
+                    <img src="./assets/massive.png" alt="Massive Media logo">
+                </li>
+                <li>
+                    <object data="./assets/svg-prepboarding.svg" width="50" height="50" tabindex="-1"> </object>
+                    <span class="sr-only">PREP - Professional Education Placement logo</span>
+                </li>
+                <li>
+                    <img src="./assets/ninept.png" alt="Nine Point Agency logo">
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="about grid two-col asym">
+            <div class="title-col">
+                <h2 class="h3">About me</h2>
+                <ul class="tag-list personal">
+                    <li class="tag-item">Cat trainer</li>
+                    <li class="tag-item">Sewing instructor</li>
+                    <li class="tag-item">Central defender</li>
+                    <li class="tag-item">Casual cyclist</li>
+                    <li class="tag-item">Cider-enthusiast</li>
+                </ul>
+            </div>
+            <div class="content-col">
+                <p>With a background in design, and an interest in finding the intersection of art and science, I was driven to explore web development as a form of digital crafting.</p>
+                <p>Over my seven-year career, I’ve worked alongside talented designers and project managers to provide engaging, vivid online experiences for clients across various industries. Through these experiences I’ve honed an empathetic and compassionate approach to web development with a strong focus in web accessibility, site performance and end user experience.</p>
+                <button class="button open-modal">
+                    <span>
+                        read a little more<span class="sr-only"> about me</span>
+                    </span>
+                </button>
+                <dialog class="modal-backdrop" id="dialog-longbio" role="dialog" aria-labelledby="dialog-longbio-lable" aria-live="assertive" aria-modal="true" data-display="hidden" inert="true">
+                    <div class="modal-wrapper">
+                        <div class="modal-content">
+                            <h3 id="dialog-longbio-lable" class="h6">more about me</h3>
+                            <button class="close-modal">
+                                <span class="ex"></span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <p>I've always been fascinated by the intersection of art and science, which was sparked by my exposure to the digital world through platforms like Neopets and summers spent playing video games like Mario Kart.</p>
+                            <p>After completing my Diploma in Graphic Communications and Print Design from the Southern Alberta Institute of Technology, I relocated to Vancouver to work as a UI Designer at a web design and development company. It was there that I discovered my passion for coding and transforming designs into interactive experiences.</p>
+                            <p>In 2016, I transitioned from a designer to a developer by attending the Web Development bootcamp at Red Academy, where the course covered HTML, CSS, Javascript, Wordpress, PHP, web accessibility, Angular/React, build tools, and Git.</p>
+                            <p>I have 7 years of experience working freelance and at digital agencies, building and maintaining websites for clients in various industries such as hospitality, tourism, healthcare, and technology. I have collaborated closely with designers, project managers, and clients, actively participating in all project stages and implementing an organized approach to the technical process. My expertise lies in web accessibility, performance optimization, and delivering engaging user experiences. I am proficient in working with Wordpress, Shopify, Squarespace, and React projects.</p>
+                            <p>Recently, I have been exploring static site generators, furthering my knowledge of web accessibility, and expanding my skills in sewing and crocheting.</p>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+        </section>
+
+        <section class="diy-listing">
+            <div class="section-title">
+                <h2 class="h3">
+                    DIY projects
+                </h2>
+            </div>
+            <div class="grid four-col">
+                <figure class="image-wrapper hover-caption">
+                    <img src="./assets/woodworking.jpg" alt="A light wood cut piece in the shape of a monstera leaf with a triangle of plexiglass nailed to the top ">
+                    <figcaption>
+                        wood working decor
+                        <span class="built-at">made at a friends in Port Alberni</span>
+                    </figcaption>
+                </figure>
+                <figure class="image-wrapper hover-caption delay-one">
+                    <img src="./assets/peaches.jpg" alt="A button up collared shirt in a peach print fabric on a hanger">
+                    <figcaption>
+                        peachy patina blouse
+                        <span class="built-at">pattern by <a href="https://www.instagram.com/fridaypatterncompany/" class="caption-link" target="_blank" rel="noreferrer">Friday Pattern Company</a></span>
+                    </figcaption>
+                </figure>
+                <figure class="image-wrapper hover-caption delay-two">
+                    <img src="./assets/weddingdress.jpg" alt="Terra standing in her open back wedding dress in a field in front of a tree">
+                    <figcaption>
+                        my wedding dress
+                        <span class="built-at">self drafted and sewn with love and help</span>
+                    </figcaption>
+                </figure>
+                <figure class="image-wrapper hover-caption delay-three">
+                    <img src="./assets/crochet-blanket.jpg" alt="A white and terracotta granny square chrocheted blanked on a chair beside a snake plant">
+                    <figcaption>
+                        granny square blanket
+                        <span class="built-at">made up of 140 alternating squares</span>
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <footer>
+            <section class="grid two-col asym">
+                <div class="title-col">
+                    <h2 class="h3">Get in touch</h2>
+                    <div class="contact-icons icon-row contact-links">
+                        <a href="mailto:terraepop@gmail.com" target="_blank" rel="noreferrer">
+                            Email
+                            <!-- <object data="./assets/email.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">Email Terra</span> -->
+                        </a>
+                        <a href="https://www.linkedin.com/in/terra-pope/" target="_blank" rel="noreferrer">
+                            LinkedIn
+                            <!-- <object data="./assets/linkedin.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">View terra's linkedin profile</span> -->
+                        </a>
+                        <a href="https://github.com/teeppope" target="_blank" rel="noreferrer">
+                            Github
+                            <!-- <object data="./assets/github.svg" width="50" height="50" tabindex="-1"> </object>
+                            <span class="sr-only">View terra's github profile</span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="content-col">
+                    <h3 class="built-at">let's chat</h3>
+                    <p class="hero-paragraph">I’m available for a full time role or open to freelance work, please reach out if you think I'd be a good fit.</p>
+                    <p class="built-at">This website is built using HTML, SCSS, JS, compiled with esbuild and hosted on Netlify.</p>
+                </div>
+            </section>
+        </footer>
+    </main>
+    <script src="./main.js"></script>
 </body>
 </html>
