@@ -9,6 +9,7 @@ let ctx = await esbuild.context({
         {out: 'main', in: './src/js/main.js'},
         {out: 'styles', in: './src/styles/app.scss'},
         {out: 'index', in: './src/index.html'},
+        {out: 'styleguide', in: './src/styleguide.html'},
     ],
     bundle: true,
     target: [
