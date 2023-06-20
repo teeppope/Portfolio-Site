@@ -120,7 +120,6 @@ a {
 	}
 	&:not(.text-link):not(.button):not(.button-alt) {
 		color: var(--black);
-		font-weight: bold;
 		transition: color 0.25s ease-in;
 	}
 	&:not(.text-link):not(.button):not(.button-alt):not(.icon-link) {

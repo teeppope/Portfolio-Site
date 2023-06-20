@@ -1,10 +1,10 @@
 export default function typeWriter() {
     // array with texts to type in typewriter
     const dataText = [
-                        "crafting enjoyable digital experiences\"", 
+                        "crafting digital experiences\"", 
                         "pixel perfection\"",
-                        "meeting WCAG accessibility standards\"",
-                        "creating a collaborative work environment\""
+                        "WCAG accessibility standards\"",
+                        "collaborative work environments\""
                     ];
     // type one text in the typwriter
     // keeps calling itself until the text is finished
@@ -18,7 +18,7 @@ export default function typeWriter() {
         // wait for a while and call this function again for next character
         setTimeout(function() {
             typeText(text, i + 1, fnCallback)
-        }, 100);
+        }, 50);
         }
         // text finished, call callback if there is a callback function
         else if (typeof fnCallback == 'function') {
@@ -31,7 +31,7 @@ export default function typeWriter() {
         if (typeof dataText[i] == 'undefined'){
             setTimeout(function() {
             StartTextAnimation(0);
-            }, 500);
+            }, 250);
         }
         // check if dataText[i] exists
         if (i < dataText[i].length) {

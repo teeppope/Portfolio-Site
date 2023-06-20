@@ -3,7 +3,7 @@
 }
 html{
 	font-family: var(--font-stack-sans);
-	// font-family: var(--font-stack-serif);
+	font-weight: 300;
 }
 body {
 	color: var(--grey);
@@ -88,6 +88,9 @@ section {
             img {
                 width: auto;
                 height: 35px;
+            }
+            .zingermans-logo {
+                height: 40%;
             }
             &:before {
                 content: none;
@@ -180,6 +183,9 @@ section {
                 img {
                     width: auto;
                     height: 50px;
+                }
+                .zingermans-logo {
+                    height: 60%;
                 }
             }
         }

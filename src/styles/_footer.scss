@@ -2,11 +2,10 @@ footer {
     padding: var(--base-spacing) var(--base-spacing);
     background-color: var(--lgt-green);
     .title-col {
-        padding-right: var(--base-spacing-large);
         .contact-links {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
             a:not(.text-link) {
                 font-weight: 300;
                 margin-bottom: var(--base-spacing-sm);
@@ -20,5 +19,14 @@ footer {
     }
     .hero-paragraph {
         margin-bottom: var(--base-spacing);
+    }
+    @media (min-width: 1024px) {
+        .title-col {
+            padding-right: var(--base-spacing-large);
+            .contact-links {
+                flex-direction: column;
+            align-items: flex-start;
+            }
+        }
     }
 }
