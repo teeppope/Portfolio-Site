@@ -10,6 +10,7 @@ let ctx = await esbuild.context({
         {out: 'styles', in: './src/styles/app.scss'},
         {out: 'index', in: './src/index.html'},
         {out: 'styleguide', in: './src/styleguide.html'},
+        {out: 'stitches', in: './src/stitches.html'},
     ],
     bundle: true,
     target: [

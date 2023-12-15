@@ -11,6 +11,7 @@ await esbuild.build({
         {out: 'styles', in: './src/styles/app.scss'},
         {out: 'index', in: './src/index.html'},
         {out: 'styleguide', in: './src/styleguide.html'},
+        {out: 'stitches', in: './src/stitches.html'},
     ],
     bundle: true,
     minify: true,

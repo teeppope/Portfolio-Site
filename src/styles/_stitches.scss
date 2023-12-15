@@ -1,0 +1,12 @@
+.stitches {
+    section {
+        &:first-of-type {
+            padding: var(--base-spacing-extra-large) 0;
+        }
+    }
+    iframe {
+        aspect-ratio: 16 / 9;
+        height: 100%;
+        width: 100%;
+    }
+}
